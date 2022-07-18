@@ -2,8 +2,8 @@ package radiostation;
 
 public class Song extends Broadcast {
 
-    private String artist;
-    private String title;
+    private final String artist;
+    private final String title;
 
     public Song(String artist, String title, int durationSec) {
         super(durationSec);
