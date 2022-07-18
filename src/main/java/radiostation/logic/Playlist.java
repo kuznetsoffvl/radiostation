@@ -1,4 +1,4 @@
-package radiostation;
+package radiostation.logic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,11 +6,11 @@ import java.util.List;
 public class Playlist implements PlaylistFactoryDefault{
     private List<Broadcast> playList;
 
-    private BroadcastCollection broadcastCollection;
+    private final BroadcastCollection broadcastCollection;
 
-    private int maxDurationSec = 0;
+    private final int maxDurationSec;
     private int totalDurationSec = 0;
-    private int maxPaidDurationSec = 0;
+    private final int maxPaidDurationSec;
     private int totalPaidDurationSec = 0;
     //private int cost;
 
@@ -33,7 +33,7 @@ public class Playlist implements PlaylistFactoryDefault{
 
             Broadcast broadcast = broadcastCollection.nextBroadcast();
             boolean willAdd = false;
-            int currDuration = (int) broadcast.getDurationSec();
+            int currDuration = broadcast.getDurationSec();
 
             if (currDuration == 0)  {continue; }
             if (broadcast.isPaid()) {

@@ -1,4 +1,6 @@
-package radiostation;
+package radiostation.logic;
+
+import radiostation.logic.Broadcast;
 
 public class Song extends Broadcast {
 

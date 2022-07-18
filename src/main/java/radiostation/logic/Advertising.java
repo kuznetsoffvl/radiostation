@@ -1,4 +1,4 @@
-package radiostation;
+package radiostation.logic;
 
 public class Advertising extends Broadcast {
     protected String productName;

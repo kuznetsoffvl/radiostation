@@ -1,4 +1,4 @@
-package radiostation;
+package radiostation.logic;
 
 public abstract class Broadcast {
 

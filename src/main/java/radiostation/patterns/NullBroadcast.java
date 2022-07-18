@@ -1,4 +1,6 @@
-package radiostation;
+package radiostation.patterns;
+
+import radiostation.logic.Broadcast;
 
 public class NullBroadcast extends Broadcast {
 

@@ -1,4 +1,4 @@
-package radiostation;
+package radiostation.logic;
 
 interface PlaylistFactoryDefault {
     void createPlaylist();

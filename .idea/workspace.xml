@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31d1c248-5e39-4228-b052-78f733a6f56e" name="Changes" comment="first release&#10;no patterns explicitly">
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/IContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/IIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/RoundMathAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/Advertising.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Advertising.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/Broadcast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Broadcast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/BroadcastCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/BroadcastCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/BroadcastList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/BroadcastList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/FreeContentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/FreeContentFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/IContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/IIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/Interview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Interview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/NullBroadcast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/NullBroadcast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/PaidContentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/PaidContentFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Playlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/PlaylistFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/PlaylistFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/PlaylistFactoryDefault.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/PlaylistFactoryDefault.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/RecordCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/dontused/RecordCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/Translation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/dontused/Translation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +69,11 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="radiostation" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\Java\IntellijIdea\radiostation\src\main\java\radiostation\patterns\notused" />
+      <recent name="D:\Work\Java\IntellijIdea\radiostation\src\main\java\radiostation\notused" />
+      <recent name="D:\Work\Java\IntellijIdea\radiostation\src\main\java\radiostation\patterns" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="radiostation" />
     </key>
@@ -81,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658050361484</updated>
-      <workItem from="1658050363032" duration="46632000" />
+      <workItem from="1658050363032" duration="50025000" />
     </task>
     <task id="LOCAL-00001" summary="first release&#10;no patterns explicitly">
       <created>1658136997281</created>
@@ -90,7 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658136997281</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first release&#10;no patterns explicitly">
+      <created>1658148690410</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658148690410</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first release&#10;no patterns explicitly">
+      <created>1658148721922</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658148721922</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,7 +140,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

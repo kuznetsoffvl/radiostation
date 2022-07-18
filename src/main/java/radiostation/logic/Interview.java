@@ -1,4 +1,6 @@
-package radiostation;
+package radiostation.logic;
+
+import radiostation.patterns.RoundMathAdapter;
 
 public class Interview extends Broadcast {
 
@@ -13,7 +15,8 @@ public class Interview extends Broadcast {
 
     @Override
     public int getCost() {
-        return ((int) (double) Math.round( Double.valueOf(durationSec) / 60 ))  * PRICE_PER_MIN;
+        // ADAPTER pattern used
+        return RoundMathAdapter.roundDivisionToInt(durationSec * PRICE_PER_MIN, 60);
     }
 
     @Override

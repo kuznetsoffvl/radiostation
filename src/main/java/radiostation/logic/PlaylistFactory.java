@@ -1,10 +1,10 @@
-package radiostation;
+package radiostation.logic;
 
 public class PlaylistFactory implements PlaylistFactoryDefault{
 
-    private BroadcastCollection broadcastCollection;
+    private final BroadcastCollection broadcastCollection;
 
-    private int maxDurationSec;
+    private final int maxDurationSec;
     private Playlist playlist;
 
 

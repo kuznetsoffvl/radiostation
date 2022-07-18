@@ -1,4 +1,4 @@
-package radiostation;
+package radiostation.patterns;
 
 interface PaidContentFactory {
     void addAdvertising(int quantity);

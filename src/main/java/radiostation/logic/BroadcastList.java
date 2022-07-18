@@ -1,4 +1,4 @@
-package radiostation;
+package radiostation.logic;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -19,4 +19,10 @@ public class BroadcastList<Broadcast> extends ArrayList<Broadcast> implements Li
         return this.get(index++);
     }
 
+    @Override
+    public BroadcastList<Broadcast> clone() {
+        BroadcastList clone = (BroadcastList) super.clone();
+        // TODO: copy mutable state here, so the clone can't change the internals of the original
+        return clone;
+    }
 }

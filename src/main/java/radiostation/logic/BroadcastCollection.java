@@ -1,15 +1,18 @@
-package radiostation;
+package radiostation.logic;
+
+import radiostation.patterns.NullBroadcast;
 
 import java.util.List;
 
-public class BroadcastCollection implements IContainer
+public class BroadcastCollection
+        //implements IContainer
         //implements PlaylistFactory
 {
-    private List<Song> songs; // = new BroadcastList<>(new ArrayList<>());
-    private List<Advertising> ads; // = new BroadcastList<>(new ArrayList<>());
-    private List<Interview> interviews; // = new BroadcastList<>(new ArrayList<>());
+    private final List<Song> songs; // = new BroadcastList<>(new ArrayList<>());
+    private final List<Advertising> ads; // = new BroadcastList<>(new ArrayList<>());
+    private final List<Interview> interviews; // = new BroadcastList<>(new ArrayList<>());
 
-    private List<Broadcast> playlist;
+    //private List<Broadcast> playlist;
 
     private int cursor = 3; //0-song, 1-ad, 2-interview
 
@@ -21,15 +24,15 @@ public class BroadcastCollection implements IContainer
     }
 
     public Broadcast nextSong() {
-        return (Broadcast) ((BroadcastList) songs).getNext();
+        return (Broadcast) ((BroadcastList<?>) songs).getNext();
     }
 
     public Broadcast nextAd() {
-        return (Broadcast) ((BroadcastList) ads).getNext();
+        return (Broadcast) ((BroadcastList<?>) ads).getNext();
     }
 
     public Broadcast nextInterview() {
-        return (Broadcast) ((BroadcastList) interviews).getNext();
+        return (Broadcast) ((BroadcastList<?>) interviews).getNext();
     }
 
     public Broadcast nextBroadcast(){
@@ -49,7 +52,7 @@ public class BroadcastCollection implements IContainer
                 "songs=" + songs +
                 ", ads=" + ads +
                 ", interviews=" + interviews +
-                ", playlist=" + playlist +
+                //", playlist=" + playlist +
                 ", cursor=" + cursor +
                 '}';
     }
@@ -75,41 +78,41 @@ public class BroadcastCollection implements IContainer
 //        return interviews.get(interviewIndex++);
 //    }
 
-    @Override
-    public IIterator createSongsIterator() {
-        SongsIterator iterator = new SongsIterator();
-        return iterator;
-    }
-
-    @Override
-    public IIterator createAdsIterator() {
-        return null;
-    }
-
-    @Override
-    public IIterator createInterviewsIterator() {
-        return null;
-    }
-
-    private class SongsIterator implements IIterator{
-        private int index;
-
-        @Override
-        public boolean hasNext() {
-            if (index < songs.size() ) {
-                return true;
-            }
-            return false;
-        }
-
-        @Override
-        public Object next() {
-            if (!this.hasNext()){
-                index = -1; // to the top of the list
-            }
-            return songs.get(index++);
-        }
-
-    }
-
+//    @Override
+//    public IIterator createSongsIterator() {
+//        SongsIterator iterator = new SongsIterator();
+//        return iterator;
+//    }
+//
+//    @Override
+//    public IIterator createAdsIterator() {
+//        return null;
+//    }
+//
+//    @Override
+//    public IIterator createInterviewsIterator() {
+//        return null;
+//    }
+//
+//    private class SongsIterator implements IIterator{
+//        private int index;
+//
+//        @Override
+//        public boolean hasNext() {
+//            if (index < songs.size() ) {
+//                return true;
+//            }
+//            return false;
+//        }
+//
+//        @Override
+//        public Object next() {
+//            if (!this.hasNext()){
+//                index = -1; // to the top of the list
+//            }
+//            return songs.get(index++);
+//        }
+//
+//    }
+//
 }
