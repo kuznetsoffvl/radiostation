@@ -1,4 +1,4 @@
-package radiostation.logic;
+package radiostation.logic.broadcasts;
 
 public class Advertising extends Broadcast {
     protected String productName;
@@ -21,5 +21,10 @@ public class Advertising extends Broadcast {
                 "productName='" + productName + '\'' +
                 ", durationSec=" + durationSec +
                 '}';
+    }
+
+    @Override
+    public boolean isPaid() {
+        return true;
     }
 }

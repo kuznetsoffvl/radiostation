@@ -10,4 +10,11 @@ public class RoundMathAdapter {
         return Double.valueOf(result).intValue(); // (int) result ;
 
     }
+
+    // ADAPTER pattern used
+    public static int floorMultiplyIntByDouble(int a, double b){
+        return Double.valueOf(Math.floor((double) a * b)).intValue();
+    }
+
+
 }

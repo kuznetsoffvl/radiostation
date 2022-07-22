@@ -1,4 +1,4 @@
-package radiostation.logic;
+package radiostation.dontused;
 
 import java.util.ArrayList;
 import java.util.Collection;

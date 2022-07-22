@@ -1,4 +1,4 @@
-package radiostation.logic;
+package radiostation.logic.broadcasts;
 
 import radiostation.patterns.RoundMathAdapter;
 
@@ -25,5 +25,10 @@ public class Interview extends Broadcast {
                 "respondent='" + respondent + '\'' +
                 ", durationSec=" + durationSec +
                 '}';
+    }
+
+    @Override
+    public boolean isPaid() {
+        return true;
     }
 }

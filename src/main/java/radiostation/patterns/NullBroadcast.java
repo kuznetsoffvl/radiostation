@@ -1,9 +1,10 @@
 package radiostation.patterns;
 
-import radiostation.logic.Broadcast;
+import radiostation.logic.broadcasts.Broadcast;
 
 public class NullBroadcast extends Broadcast {
 
+    // NULL OBJECT pattern used here
     public NullBroadcast() {
         super(0);
     }
@@ -16,5 +17,10 @@ public class NullBroadcast extends Broadcast {
     @Override
     public String toString() {
         return "";
+    }
+
+    @Override
+    public boolean isPaid() {
+        return false;
     }
 }

@@ -1,5 +1,9 @@
-package radiostation.logic;
+package radiostation.dontused;
 
+import radiostation.logic.broadcasts.Advertising;
+import radiostation.logic.broadcasts.Broadcast;
+import radiostation.logic.broadcasts.Interview;
+import radiostation.logic.broadcasts.Song;
 import radiostation.patterns.NullBroadcast;
 
 import java.util.List;

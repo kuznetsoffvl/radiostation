@@ -1,6 +1,10 @@
-package radiostation.logic;
+package radiostation.dontused;
 
-public class PlaylistFactory implements PlaylistFactoryDefault{
+import radiostation.dontused.BroadcastCollection;
+import radiostation.dontused.Playlist;
+import radiostation.dontused.PlaylistFactoryDefault;
+
+public class PlaylistFactory implements PlaylistFactoryDefault {
 
     private final BroadcastCollection broadcastCollection;
 

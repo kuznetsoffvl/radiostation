@@ -1,9 +1,11 @@
-package radiostation.logic;
+package radiostation.dontused;
+
+import radiostation.logic.broadcasts.Broadcast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Playlist implements PlaylistFactoryDefault{
+public class Playlist implements PlaylistFactoryDefault {
     private List<Broadcast> playList;
 
     private final BroadcastCollection broadcastCollection;

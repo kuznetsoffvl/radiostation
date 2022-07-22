@@ -1,6 +1,4 @@
-package radiostation.logic;
-
-import radiostation.logic.Broadcast;
+package radiostation.logic.broadcasts;
 
 public class Song extends Broadcast {
 
@@ -25,5 +23,10 @@ public class Song extends Broadcast {
                 ", title='" + title + '\'' +
                 ", durationSec=" + durationSec +
                 '}';
+    }
+
+    @Override
+    public boolean isPaid() {
+        return false;
     }
 }

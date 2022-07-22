@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31d1c248-5e39-4228-b052-78f733a6f56e" name="Changes" comment="added TODO">
+      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Presenters/CurriculumVitae.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Presenters/GuestPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Presenters/Presenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Presenters/StuffPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/BroadcastSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Advertising.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Advertising.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Broadcast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Broadcast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/BroadcastCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/dontused/BroadcastCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/BroadcastList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/dontused/BroadcastList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Interview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Interview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/ListOfBroadcasts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/BroadcastList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/dontused/Playlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/PlaylistFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/dontused/PlaylistFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/PlaylistFactoryDefault.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/dontused/PlaylistFactoryDefault.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Repository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/NullBroadcast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/NullBroadcast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/RoundMathAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/RoundMathAdapter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Record" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -35,18 +55,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Work/Java/IntellijIdea/p0807-2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Work/Java/IntellijIdea/p0807-2",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="radiostation.logic" />
       <recent name="radiostation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -89,7 +110,8 @@
       <workItem from="1658050363032" duration="62669000" />
       <workItem from="1658326036153" duration="1783000" />
       <workItem from="1658418603294" duration="1569000" />
-      <workItem from="1658471226864" duration="2819000" />
+      <workItem from="1658471226864" duration="8135000" />
+      <workItem from="1658498629621" duration="10667000" />
     </task>
     <task id="LOCAL-00001" summary="first release&#10;no patterns explicitly">
       <created>1658136997281</created>
@@ -140,7 +162,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658484255907</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added TODO">
+      <created>1658484472525</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658484472525</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added TODO">
+      <created>1658484752787</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658484752787</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

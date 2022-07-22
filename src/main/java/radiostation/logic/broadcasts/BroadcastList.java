@@ -1,11 +1,24 @@
-package radiostation.logic;
+package radiostation.logic.broadcasts;
 
 import java.util.*;
 import java.util.function.Consumer;
 
-public class ListOfBroadcasts {
+public class BroadcastList {
     private List<Broadcast> broadcasts = new ArrayList<>();
     private int cursor = -1; // to start with 0 position on getNext()
+
+    private int totalDurationSec = 0;
+    private int paidDurationSec = 0;
+
+    public BroadcastList() {
+    }
+
+    public BroadcastList(List<Broadcast> broadcasts) {
+        this.broadcasts = broadcasts;
+        for (Broadcast broadcast : broadcasts) {
+            accumulateDuration(broadcast);
+        }
+    }
 
     private void calibrateCursor(){
         cursor = (cursor < broadcasts.size()-1) ? cursor : 0;
@@ -21,12 +34,30 @@ public class ListOfBroadcasts {
         return this.get(cursor + 1);
     }
 
+    public int getTotalDurationSec() {
+        return totalDurationSec;
+    }
+
+    public int getPaidDurationSec(){
+        return paidDurationSec;
+    }
+
     public boolean add(Broadcast broadcast) {
-        return broadcasts.add(broadcast);
+        if (broadcasts.add(broadcast)) {
+            accumulateDuration(broadcast);
+            return true;
+        }
+        return false;
     }
 
     public boolean addAll(Collection<? extends Broadcast> c) {
-        return broadcasts.addAll(c);
+        if (broadcasts.addAll(c)) {
+            for (Broadcast broadcast : c) {
+                accumulateDuration(broadcast);
+            }
+            return true;
+        }
+        return false;
     }
 
     public void forEach(Consumer<? super Broadcast> action) {
@@ -35,6 +66,13 @@ public class ListOfBroadcasts {
 
     public List<Broadcast> getBroadcasts() {
         return broadcasts;
+    }
+
+    private void accumulateDuration(Broadcast broadcast) {
+        totalDurationSec += broadcast.durationSec;
+        if (broadcast.isPaid()) {
+            paidDurationSec += broadcast.durationSec;
+        }
     }
 
     @Override
@@ -48,4 +86,5 @@ public class ListOfBroadcasts {
         stringBuilder.append("}");
         return stringBuilder.toString();
     }
+
 }
