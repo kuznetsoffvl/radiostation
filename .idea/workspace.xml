@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31d1c248-5e39-4228-b052-78f733a6f56e" name="Changes" comment="added classes ListOfBroadcasts, Repository">
-      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/ListOfBroadcasts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/BroadcastCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/BroadcastCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/BroadcastList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/BroadcastList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Playlist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +89,7 @@
       <workItem from="1658050363032" duration="62669000" />
       <workItem from="1658326036153" duration="1783000" />
       <workItem from="1658418603294" duration="1569000" />
-      <workItem from="1658471226864" duration="1850000" />
+      <workItem from="1658471226864" duration="2396000" />
     </task>
     <task id="LOCAL-00001" summary="first release&#10;no patterns explicitly">
       <created>1658136997281</created>
@@ -125,7 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658154519358</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added classes ListOfBroadcasts, Repository">
+      <created>1658483453201</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658483453201</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added classes ListOfBroadcasts, Repository">
+      <created>1658483508978</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658483508978</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
