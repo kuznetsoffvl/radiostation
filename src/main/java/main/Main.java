@@ -16,8 +16,9 @@ public class Main {
     private void runTest(){
 
         /* TODO: Change class BroadcastList to class ListOfBroadcasts, implement input menu:
-        select song; choose ads; choose an interview; put a block of songs; place an ad block.
-        If the duration of the paid broadcast is exceeded, offer to fill the air with a block of songs
+        select song; choose ads; choose an interview; place a block of songs; place an ad block.
+        If the duration of the paid broadcast is exceeded, fill the broadcast with a block of songs.
+        Correct warnings
          */
 
         ListOfBroadcasts list = new ListOfBroadcasts();
@@ -53,8 +54,9 @@ public class Main {
     private void runTranslation() {
 
          /* TODO: Change class BroadcastList to class ListOfBroadcasts, implement input menu:
-        select song; choose ads; choose an interview; put a block of songs; place an ad block.
-        If the duration of the paid broadcast is exceeded, offer to fill the air with a block of songs
+        select song; choose ads; choose an interview; place a block of songs; place an ad block.
+        If the duration of the paid broadcast is exceeded, fill the broadcast with a block of songs.
+        Correct warnings
          */
 
         List<Song> songs = new BroadcastList<>(new ArrayList<>());
