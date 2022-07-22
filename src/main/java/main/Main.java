@@ -3,12 +3,45 @@ package main;
 import radiostation.logic.*;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 
 public class Main {
     public static void main(String[] args) {
-        new Main().runTranslation();
+        new Main().runTest();
+    }
+
+    private void runTest(){
+
+        ListOfBroadcasts list = new ListOfBroadcasts();
+        Repository repository = new Repository();
+
+        ListOfBroadcasts songs = Repository.getSongs();
+        Broadcast next = songs.getNext();
+
+        //System.out.println(songs);
+
+        //list.add(songs.getNext());
+
+        //list.addAll((Collection<? extends Broadcast>) songs.getBroadcasts());
+//        for (Broadcast song : songs.getBroadcasts()) {
+//            list.add(song);
+//        }
+
+
+        System.out.println(list);
+
+
+//        List<Song> songs = new BroadcastList<>(new ArrayList<>());
+//        songs.add( new Song("Beatles", "Yesterday", 300));
+//        songs.add( new Song("Scorpions", "Wild Child", 420));
+//        songs.add( new Song("Deep Purple", "Smoke on the water", 380));
+//
+//        int i = 0;
+//
+//        System.out.println(songs.get(i++));
+//        System.out.println(i);
     }
 
     private void runTranslation() {

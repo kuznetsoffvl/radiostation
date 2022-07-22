@@ -20,8 +20,8 @@ public class Playlist implements PlaylistFactoryDefault{
         this.broadcastCollection = broadcastCollection;
         this.maxDurationSec = maxDurationSec;
         this.maxPaidDurationSec = (int) Math.floor(maxDurationSec * PAID_PROPORTION);
-        System.out.println("this.maxDurationSec = " + this.maxDurationSec);
-        System.out.println("this.maxPaidDurationSec = " + this.maxPaidDurationSec);
+        //System.out.println("this.maxDurationSec = " + this.maxDurationSec);
+        //System.out.println("this.maxPaidDurationSec = " + this.maxPaidDurationSec);
     }
 
     @Override
