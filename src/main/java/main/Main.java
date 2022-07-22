@@ -9,17 +9,20 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        new Main().runTest();
-        //new Main().runTranslation();
-    }
-
-    private void runTest(){
 
         /* TODO: Change class BroadcastList to class ListOfBroadcasts, implement input menu:
         select song; choose ads; choose an interview; place a block of songs; place an ad block.
         If the duration of the paid broadcast is exceeded, fill the broadcast with a block of songs.
         Correct warnings
          */
+
+        new Main().runTest();
+        //new Main().runTranslation();
+    }
+
+    private void runTest(){
+
+
 
         ListOfBroadcasts list = new ListOfBroadcasts();
         Repository repository = new Repository();
@@ -53,11 +56,7 @@ public class Main {
 
     private void runTranslation() {
 
-         /* TODO: Change class BroadcastList to class ListOfBroadcasts, implement input menu:
-        select song; choose ads; choose an interview; place a block of songs; place an ad block.
-        If the duration of the paid broadcast is exceeded, fill the broadcast with a block of songs.
-        Correct warnings
-         */
+
 
         List<Song> songs = new BroadcastList<>(new ArrayList<>());
         songs.add( new Song("Beatles", "Yesterday", 300));
