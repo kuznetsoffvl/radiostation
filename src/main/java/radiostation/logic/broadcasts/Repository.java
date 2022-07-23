@@ -1,13 +1,16 @@
 package radiostation.logic.broadcasts;
 
-public class Repository {
+import radiostation.patterns.FreeContent;
+import radiostation.patterns.PaidContent;
+
+public class Repository implements FreeContent, PaidContent {
 
     // Only static fields and methods should have been there,
     // but i want to use the SINGLETON pattern... :)
     private static Repository instance;
-    private BroadcastList songs;
-    private BroadcastList ads;
-    private BroadcastList interviews;
+    private final BroadcastList songs;
+    private final BroadcastList ads;
+    private final BroadcastList interviews;
 
     private Repository() {
         songs = new BroadcastList();
@@ -54,5 +57,36 @@ public class Repository {
 
     public Broadcast nextInterview(){
         return interviews.getNext();
+    }
+
+//    public Broadcast nextBroadcast(BroadcastList field){
+//        if (Field.class = "")
+//    }
+
+    @Override
+    public BroadcastList getSongsBlock(int durationSec) {
+        return getBroadcastsByDuration(songs, durationSec);
+    }
+
+    @Override
+    public BroadcastList getAdsBlock(int durationSec) {
+        return getBroadcastsByDuration(ads, durationSec);
+    }
+
+    @Override
+    public BroadcastList getInterviewsBlock(int durationSec) {
+        return getBroadcastsByDuration(interviews, durationSec);
+    }
+
+    public BroadcastList getBroadcastsByDuration(BroadcastList source, int durationSec){
+        BroadcastList destination = new BroadcastList();
+
+        while (destination.getTotalDurationSec() <= durationSec ){
+            Broadcast currBroadcast = source.getNext();
+            if (destination.getTotalDurationSec() + currBroadcast.getDurationSec() <= durationSec){
+                source.add(currBroadcast);
+            }
+        }
+        return  destination;
     }
 }

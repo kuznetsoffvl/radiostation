@@ -4,27 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31d1c248-5e39-4228-b052-78f733a6f56e" name="Changes" comment="added TODO">
-      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Presenters/CurriculumVitae.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Presenters/GuestPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Presenters/Presenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/Presenters/StuffPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/BroadcastSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Repository.java" afterDir="false" />
+    <list default="true" id="31d1c248-5e39-4228-b052-78f733a6f56e" name="Changes" comment="started refactoring some Classes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/BroadcastFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/MixWithAdsFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/MixWithInterviewFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/PaidContent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Advertising.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Advertising.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Broadcast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Broadcast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/BroadcastCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/dontused/BroadcastCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/BroadcastList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/dontused/BroadcastList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Interview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Interview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/ListOfBroadcasts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/BroadcastList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/dontused/Playlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/PlaylistFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/dontused/PlaylistFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/PlaylistFactoryDefault.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/dontused/PlaylistFactoryDefault.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Repository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Advertising.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Advertising.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/BroadcastList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/BroadcastList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Interview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Interview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/FreeContentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/FreeContent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/NullBroadcast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/NullBroadcast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/PaidContentFactory.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/RoundMathAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/RoundMathAdapter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Work/Java/IntellijIdea/p0807-2",
+    "last_opened_file_path": "D:/Work/Java/IntellijIdea/radiostation",
     "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
@@ -76,6 +69,7 @@
       <recent name="D:\Work\Java\IntellijIdea\radiostation\src\main\java\radiostation\patterns" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="radiostation.patterns" />
       <recent name="radiostation" />
     </key>
   </component>
@@ -111,7 +105,8 @@
       <workItem from="1658326036153" duration="1783000" />
       <workItem from="1658418603294" duration="1569000" />
       <workItem from="1658471226864" duration="8135000" />
-      <workItem from="1658498629621" duration="10667000" />
+      <workItem from="1658498629621" duration="10879000" />
+      <workItem from="1658569003481" duration="9651000" />
     </task>
     <task id="LOCAL-00001" summary="first release&#10;no patterns explicitly">
       <created>1658136997281</created>
@@ -176,7 +171,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658484752787</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="started refactor some Classes">
+      <created>1658526062386</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658526062386</updated>
+    </task>
+    <task id="LOCAL-00011" summary="started refactoring some Classes">
+      <created>1658526109476</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1658526109476</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +213,8 @@
     <MESSAGE value="divided into different packages" />
     <MESSAGE value="added classes ListOfBroadcasts, Repository" />
     <MESSAGE value="added TODO" />
-    <option name="LAST_COMMIT_MESSAGE" value="added TODO" />
+    <MESSAGE value="started refactor some Classes" />
+    <MESSAGE value="started refactoring some Classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="started refactoring some Classes" />
   </component>
 </project>

@@ -13,7 +13,7 @@ public class BroadcastList {
     public BroadcastList() {
     }
 
-    public BroadcastList(List<Broadcast> broadcasts) {
+    public BroadcastList(List<Broadcast> broadcasts){
         this.broadcasts = broadcasts;
         for (Broadcast broadcast : broadcasts) {
             accumulateDuration(broadcast);
@@ -70,6 +70,7 @@ public class BroadcastList {
 
     private void accumulateDuration(Broadcast broadcast) {
         totalDurationSec += broadcast.durationSec;
+        // TODO: think about to release OBSERVER pattern here
         if (broadcast.isPaid()) {
             paidDurationSec += broadcast.durationSec;
         }

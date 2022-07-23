@@ -1,5 +1,7 @@
 package radiostation.logic.broadcasts;
 
+import radiostation.patterns.PaidContent;
+
 public class Advertising extends Broadcast {
     protected String productName;
 
@@ -27,4 +29,5 @@ public class Advertising extends Broadcast {
     public boolean isPaid() {
         return true;
     }
+
 }

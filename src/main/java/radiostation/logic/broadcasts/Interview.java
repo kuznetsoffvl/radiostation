@@ -1,5 +1,6 @@
 package radiostation.logic.broadcasts;
 
+import radiostation.patterns.PaidContent;
 import radiostation.patterns.RoundMathAdapter;
 
 public class Interview extends Broadcast {
@@ -31,4 +32,5 @@ public class Interview extends Broadcast {
     public boolean isPaid() {
         return true;
     }
+
 }

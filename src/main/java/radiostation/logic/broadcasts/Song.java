@@ -1,5 +1,7 @@
 package radiostation.logic.broadcasts;
 
+import radiostation.patterns.FreeContent;
+
 public class Song extends Broadcast {
 
     private final String artist;
@@ -29,4 +31,5 @@ public class Song extends Broadcast {
     public boolean isPaid() {
         return false;
     }
+
 }
