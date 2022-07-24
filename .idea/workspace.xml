@@ -5,39 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31d1c248-5e39-4228-b052-78f733a6f56e" name="Changes" comment="BUILDER pattern released">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/Content.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/ContentBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/MixMasterFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/dontused/BroadcastCollection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/dontused/BroadcastList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/dontused/Playlist.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/dontused/PlaylistFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/dontused/PlaylistFactoryDefault.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/dontused/RecordCollection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/dontused/Translation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Presenters/CurriculumVitae.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/presenters/CurriculumVitae.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Presenters/GuestPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/presenters/GuestPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Presenters/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/presenters/Presenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/Presenters/StuffPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/presenters/StuffPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Advertising.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Advertising.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Broadcast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Broadcast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/BroadcastList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/BroadcastList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/BroadcastSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/BroadcastSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Interview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Interview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/Song.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/BroadcastFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/BroadcastFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/FreeContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/FreeContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/IContainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/IIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/MixWithAdsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/MixWithAdsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/MixWithInterviewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/MixWithInterviewFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/NullBroadcast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/NullBroadcast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/PaidContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/PaidContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/RoundMathAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/RoundMathAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/MixMasterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/MixMasterFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +95,7 @@
       <workItem from="1658471226864" duration="8135000" />
       <workItem from="1658498629621" duration="10879000" />
       <workItem from="1658569003481" duration="10327000" />
-      <workItem from="1658646192787" duration="36315000" />
+      <workItem from="1658646192787" duration="37983000" />
     </task>
     <task id="LOCAL-00001" summary="first release&#10;no patterns explicitly">
       <created>1658136997281</created>
@@ -212,7 +181,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658579201940</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="BUILDER pattern released">
+      <created>1658684250843</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1658684250843</updated>
+    </task>
+    <task id="LOCAL-00014" summary="BUILDER pattern released">
+      <created>1658684256160</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1658684256160</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
