@@ -1,6 +1,7 @@
 package radiostation.logic.broadcasts;
 
 import radiostation.logic.presenters.Presenter;
+import radiostation.logic.presenters.StuffPresenter;
 
 import static radiostation.patterns.RoundMathAdapter.floorMultiplyIntByDouble;
 
@@ -17,12 +18,8 @@ public class BroadcastSession {
         this.presenter = presenter;
         this.totalDurationSec = totalDurationSec;
         this.broadcastList = broadcastList;
-        try {
-            if (presenter.getClass() == Class.forName("radiostation.logic.presenters.StuffPresenter")) {
-                this.presenter.addBroadcastList(broadcastList);
-            }
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
+        if (presenter.getClass() == StuffPresenter.class) {
+            this.presenter.addBroadcastList(broadcastList);
         }
     }
 

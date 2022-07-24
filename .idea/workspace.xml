@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31d1c248-5e39-4228-b052-78f733a6f56e" name="Changes" comment="BUILDER pattern released">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/patterns/MixMasterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/patterns/MixMasterFactory.java" afterDir="false" />
+    <list default="true" id="31d1c248-5e39-4228-b052-78f733a6f56e" name="Changes" comment="Merge remote-tracking branch 'origin/master'">
+      <change beforePath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/BroadcastSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/radiostation/logic/broadcasts/BroadcastSession.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
