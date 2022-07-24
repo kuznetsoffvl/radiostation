@@ -58,6 +58,10 @@ public abstract class MixMasterFactory{
                 break;
             }
         }
+        // Fill by songs in the rest of total duration
+        builder
+                .songsWithDuration(Math.min(
+                        broadcastSession.getCurrentTotalDurationSec() - builder.getCurrentTotalDurationSec(), durationSongsBlock));
 
         // Fill broadcast for TotalDurationSec by free content
 //        while (broadcastSession.getTotalDurationSec() - builder.getCurrentTotalDurationSec() > 0) {
