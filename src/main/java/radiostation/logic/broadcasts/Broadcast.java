@@ -8,8 +8,6 @@ public abstract class Broadcast {
         this.durationSec = durationSec;
     }
 
-    //public abstract int getCost();
-
     public abstract int getCost();
 
     @Override

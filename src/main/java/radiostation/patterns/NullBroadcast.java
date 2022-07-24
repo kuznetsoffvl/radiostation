@@ -2,9 +2,8 @@ package radiostation.patterns;
 
 import radiostation.logic.broadcasts.Broadcast;
 
-// NULL OBJECT pattern used
+// NULL OBJECT pattern applied
 public class NullBroadcast extends Broadcast {
-
 
     public NullBroadcast() {
         super(0);

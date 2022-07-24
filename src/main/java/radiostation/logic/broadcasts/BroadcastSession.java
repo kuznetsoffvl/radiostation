@@ -1,6 +1,6 @@
 package radiostation.logic.broadcasts;
 
-import radiostation.logic.Presenters.Presenter;
+import radiostation.logic.presenters.Presenter;
 
 import static radiostation.patterns.RoundMathAdapter.floorMultiplyIntByDouble;
 
@@ -8,15 +8,22 @@ public class BroadcastSession {
 
     private final Presenter presenter;
 
-    private BroadcastList broadcastList;
+    private final BroadcastList broadcastList;
     //list of all songs, ads and interviews played during the session
-    private final int durationSec;
+    private final int totalDurationSec;
     private static final double PAID_PROPORTION = 0.5;
 
-    public BroadcastSession(Presenter presenter, int durationSec) {
+    public BroadcastSession(Presenter presenter, int totalDurationSec, BroadcastList broadcastList) {
         this.presenter = presenter;
-        this.durationSec = durationSec;
-        broadcastList = new BroadcastList();
+        this.totalDurationSec = totalDurationSec;
+        this.broadcastList = broadcastList;
+        try {
+            if (presenter.getClass() == Class.forName("radiostation.logic.presenters.StuffPresenter")) {
+                this.presenter.addBroadcastList(broadcastList);
+            }
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public Presenter getPresenter() {
@@ -27,20 +34,47 @@ public class BroadcastSession {
         return broadcastList;
     }
 
-    public int getDurationSec() {
-        return durationSec;
+    public int getTotalDurationSec() {
+        return totalDurationSec;
     }
 
     public int getPaidDurationSec(){
         // ADAPTER pattern used
-        return floorMultiplyIntByDouble(durationSec, PAID_PROPORTION);
+        return floorMultiplyIntByDouble(totalDurationSec, PAID_PROPORTION);
     }
 
-    public int getCurrentDurationSec(){
+    public int getFreeDurationSec() {
+        return totalDurationSec - getPaidDurationSec();
+    }
+
+    public int getCurrentTotalDurationSec(){
         // DELEGATION pattern
         return broadcastList.getTotalDurationSec();
     }
 
+    public int getCurrentPaidDurationSec(){
+        // DELEGATION pattern
+        return broadcastList.getPaidDurationSec();
+    }
+
+    public int getCurrentFreeDurationSec(){
+        return getCurrentTotalDurationSec() - getCurrentPaidDurationSec();
+    }
 
 
+    public void addAllFromBroadcastList(BroadcastList source){
+        broadcastList.addAll(source.getBroadcasts());
+    }
+
+    @Override
+    public String toString() {
+        return "BroadcastSession{" +
+                "presenter=" + presenter +
+                ", broadcastList=" + broadcastList +
+                ", totalDurationSec=" + totalDurationSec +
+                ", paidDurationSec=" + getPaidDurationSec() +
+                ", CurrentDurationSec=" + getCurrentTotalDurationSec() +
+                ", CurrentPaidDurationSec=" + getCurrentPaidDurationSec() +
+                '}';
+    }
 }

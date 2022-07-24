@@ -1,6 +1,6 @@
 package radiostation.patterns;
 
-// ADAPTER pattern used
+// ADAPTER pattern applied
 public class RoundMathAdapter {
 
     public static int roundDivisionToInt(int dividend, int divider){

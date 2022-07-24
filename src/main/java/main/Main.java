@@ -1,86 +1,63 @@
 package main;
 
-import radiostation.logic.broadcasts.BroadcastList;
-import radiostation.logic.broadcasts.Repository;
+import radiostation.logic.presenters.*;
+import radiostation.logic.broadcasts.*;
+import radiostation.patterns.*;
 
 
 public class Main {
     public static void main(String[] args) {
-
-        /* TODO: Change class BroadcastList to class ListOfBroadcasts, implement input menu:
-        select song; choose ads; choose an interview; place a block of songs; place an ad block.
-        If the duration of the paid broadcast is exceeded, fill the broadcast with a block of songs.
-        Correct warnings
-         */
-
-        new Main().runBroadcast();
-        //new Main().runTranslation();
+        new Main().runSession();
     }
 
-    private void runBroadcast(){
+    private void runSession(){
+
+        // 1 variant - ads and songs (without interviews) filled by ABSTRACT FABRIC pattern
+
+        BroadcastList firstList = new BroadcastList();
+        StuffPresenter stuffPresenter = new StuffPresenter("John Smith", 15, firstList);
+
+        BroadcastSession firstSession = new BroadcastSession(
+                stuffPresenter,
+                60*60*1,
+                firstList);
+
+        BroadcastFactory firstFactory = new MixWithAdsFactory();
+        Content paidContent = firstFactory.createPaidContent(firstSession.getPaidDurationSec());
+        Content freeContent = firstFactory.createFreeContent(firstSession.getTotalDurationSec() - paidContent.getContent().getTotalDurationSec());
+
+        firstSession.addAllFromBroadcastList(paidContent.getContent());
+        firstSession.addAllFromBroadcastList(freeContent.getContent());
+
+        System.out.println(firstSession);
 
 
+        // 2 variant - ads, interviews and songs filled by ABSTRACT FABRIC pattern with static method
 
-        BroadcastList list = new BroadcastList();
-        Repository repository = Repository.getInstance();
+        BroadcastList secondList = new BroadcastList();
+        BroadcastSession secondSession = new BroadcastSession(
+                stuffPresenter,
+                60*60*2 + 60*3 + 8,
+                secondList);
 
-        list.add(repository.nextSong());
-        list.add(repository.nextAd());
-        list.add(repository.nextInterview());
+        Content mixContent = MixMasterFactory.createContent(secondSession);
+        secondSession.addAllFromBroadcastList(mixContent.getContent());
 
-
-        //BroadcastList songs = Repository.getSongs();
-        //Broadcast next = songs.getNext();
-
-        //System.out.println(songs);
-
-        //list.add(songs.getNext());
-
-        //list.addAll((Collection<? extends Broadcast>) songs.getBroadcasts());
-//        for (Broadcast song : songs.getBroadcasts()) {
-//            list.add(song);
-//        }
+        System.out.println(secondSession);
+        //System.out.println(stuffPresenter);
 
 
-        System.out.println(list);
+        // 3 variant - ads, interviews and songs filled by BUILDER pattern
 
+        BroadcastList thirdList = new BroadcastList();
+        GuestPresenter guestPresenter = new GuestPresenter("Helen Jackson", new CurriculumVitae("There should be text of Bill Morrison CV "));
+        BroadcastSession thirdSession = new BroadcastSession(
+                guestPresenter,
+                60*60*3 + 60*15 + 13,
+                thirdList);
 
-//        List<Song> songs = new BroadcastList<>(new ArrayList<>());
-//        songs.add( new Song("Beatles", "Yesterday", 300));
-//        songs.add( new Song("Scorpions", "Wild Child", 420));
-//        songs.add( new Song("Deep Purple", "Smoke on the water", 380));
-//
-//        int i = 0;
-//
-//        System.out.println(songs.get(i++));
-//        System.out.println(i);
-    }
-
-    private void runTranslation() {
-
-
-
-//        List<Song> songs = new BroadcastList<>(new ArrayList<>());
-//        songs.add( new Song("Beatles", "Yesterday", 300));
-//        songs.add( new Song("Scorpions", "Wild Child", 420));
-//        songs.add( new Song("Deep Purple", "Smoke on the water", 380));
-//
-//
-//        List<Advertising> ads = new BroadcastList<>(new ArrayList<>());
-//        ads.add(new Advertising("Lipton Tea", 20));
-//        ads.add(new Advertising("MacCoffee", 35));
-//        ads.add(new Advertising("Dove Soap", 27));
-//
-//        List<Interview> interviews = new BroadcastList<>(new ArrayList<>());
-//        interviews.add(new Interview("James Hetfield", 60*20));
-//        interviews.add(new Interview("Ozzy Osbourne", 60*35));
-//        interviews.add(new Interview("Bill Gates", 60*62));
-//
-//
-//        BroadcastCollection bCollect = new BroadcastCollection(songs, ads, interviews);
-//        PlaylistFactory factory = new PlaylistFactory(bCollect, 3*60*60 + 1); // 3 hours 1 sec
-//        factory.createPlaylist();
-//        System.out.println(factory.getPlaylist().toString());
+        MixMasterFactory.fillContentWithBuilder(thirdSession, 60*15, 60*5, 60*60 + 60*10);
+        System.out.println(thirdSession);
 
     }
 }

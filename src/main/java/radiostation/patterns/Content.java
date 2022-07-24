@@ -2,8 +2,7 @@ package radiostation.patterns;
 
 import radiostation.logic.broadcasts.BroadcastList;
 
-// ABSTRACT FACTORY pattern applied
-public interface PaidContent extends Content{
+public interface Content {
     BroadcastList getContent();
     boolean addContent(Content content);
 }
